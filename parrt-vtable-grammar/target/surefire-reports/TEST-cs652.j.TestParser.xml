@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="26" failures="0" name="cs652.j.TestParser" time="0.327" errors="0" skipped="0">
+<testsuite tests="26" failures="0" name="cs652.j.TestParser" time="0.282" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -12,7 +12,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7540"/>
+    <property name="idea.launcher.port" value="7532"/>
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -61,30 +61,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="cs652.j.TestParser" name="testParse[Args.j]" time="0.18"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[Assign.j]" time="0"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[AssignFromCall.j]" time="0.002"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[deep_hier.j]" time="0.054"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[Fields.j]" time="0.006"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[FieldsFromOutside.j]" time="0.014"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[if.j]" time="0.011"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Args.j]" time="0.154"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Assign.j]" time="0.001"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[AssignFromCall.j]" time="0.004"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[deep_hier.j]" time="0.026"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Fields.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[FieldsFromOutside.j]" time="0.004"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[if.j]" time="0.004"/>
   <testcase classname="cs652.j.TestParser" name="testParse[ifelse.j]" time="0.004"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[Inherit.j]" time="0.012"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[InheritFields.j]" time="0.002"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[InheritFields3Level.j]" time="0.004"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[InheritFieldTestInMethod.j]" time="0.004"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[InheritMethods3Level.j]" time="0.003"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[Lots.j]" time="0.007"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[Method.j]" time="0.001"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[MultiMethods.j]" time="0.002"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[polymorph.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Inherit.j]" time="0.01"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[InheritFields.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[InheritFields3Level.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[InheritFieldTestInMethod.j]" time="0.005"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[InheritMethods3Level.j]" time="0.004"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Lots.j]" time="0.006"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Method.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[MultiMethods.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[polymorph.j]" time="0.006"/>
   <testcase classname="cs652.j.TestParser" name="testParse[print.j]" time="0.001"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[qcall.j]" time="0.001"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[Return.j]" time="0.002"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[retval.j]" time="0.002"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[symtab.j]" time="0.004"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[qcall.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[Return.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[retval.j]" time="0.007"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[symtab.j]" time="0.007"/>
   <testcase classname="cs652.j.TestParser" name="testParse[TwoClasses.j]" time="0.001"/>
   <testcase classname="cs652.j.TestParser" name="testParse[vehicle.j]" time="0.003"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[vtable_check.j]" time="0.001"/>
-  <testcase classname="cs652.j.TestParser" name="testParse[while.j]" time="0.003"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[vtable_check.j]" time="0.002"/>
+  <testcase classname="cs652.j.TestParser" name="testParse[while.j]" time="0.012"/>
 </testsuite>

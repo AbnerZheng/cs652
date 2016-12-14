@@ -13,95 +13,104 @@ grammar J;
 
 file
     : (classDeclaration
-    | expression ';' | blockExpression | whileStatement | ifStatement )+ EOF
+    | statement)+ EOF
     | EOF
     ;
 
-
-expression
-    : ID ('.' ID)* '(' callParameters? ')'   //调用函数
-    | ifStatement
-    | whileStatement
-    | variableDeclaration
-    | assign
-    | newDefinition
-    | 'return' expression
-    | ID ('.' expression)*
-    | ID
-    | STRING
-    | INT
-    | FLOAT
-    ;
-
-whileStatement
-    : 'while' '(' expression ')' (expression ';' | blockExpression)
-    ;
-
-ifStatement
-    : 'if' '(' expression ')' (expression ';' | blockExpression ) (elseStatement|blockExpression)?
-    ;
-
-blockExpression
-    : '{' (expression ';')* '}'
-    ;
-
-elseStatement
-    : 'else' (expression ';' | ifStatement | blockExpression)
-    ;
-
-newDefinition
-    : 'new' ID '(' callParameters? ')'
-    ;
-
-variableDeclaration
-    : type ID
-    ;
-
-assign
-    : ID ('.' ID)* '=' expression
+statement
+    : block
+    | typeType ID ';'
+    | 'if' parExpression statement ('else' statement)?
+    | 'while' parExpression statement
+    | 'return' expression? ';'
+    | expression ';'
     ;
 
 
-
-callParameters
-    : expression (',' expression)*
+block
+    : '{' blockStatement* '}'
     ;
 
+blockStatement
+    : typeType ID ';'
+    | statement
+    ;
 
 classDeclaration
-    : 'class' ID ('extends' ID)? '{' classBody? '}'
+    : 'class' ID ('extends' typeType)? classBody
     ;
 
 classBody
-    : (methodDeclaration
-        | fields
-    )+
+    : '{' classBodyDeclaration* '}'
     ;
-
-fields
-    : variableDeclaration ';'
+classBodyDeclaration
+    : ';'
+    | block
+    | methodDeclaration
     ;
 
 methodDeclaration
-    : type ID formalParameters methodBody
+    :  (typeType|'void') ID formalParameters methodBody
+    | fieldDeclaration
     ;
 
 methodBody
-    : '{' (expression ';')* '}'
+    : block
     ;
 
-
-type
-    : ID
+fieldDeclaration
+    : typeType ID ';'
     ;
 
 formalParameters
-    : '(' parameters? ')'
+    : '(' formalParameterList? ')'
+    ;
+formalParameterList
+    : formalParameter (',' formalParameter)*
+    ;
+formalParameter
+    : typeType ID
     ;
 
-parameters
-    : type ID (',' type ID)*
+typeType
+    : primitiveType
+    | ID
     ;
+
+primitiveType
+    : 'int'
+    | 'float'
+    ;
+
+// EXPRESSIONS
+parExpression
+    : '(' expression ')'
+    ;
+expressionList
+    : expression (',' expression)*
+    ;
+statementExpression
+    : expression
+    ;
+expression
+    : primary
+    | expression '.' ID
+    | expression '(' expressionList? ')'
+    | 'new' ID '(' ')'
+    | expression op=('*'|'/'|'%') expression
+    | expression op=('+'|'-') expression
+    | <assoc=right> expression '=' expression
+    ;
+
+primary
+    : parExpression
+    | 'this'
+    | INT
+    | FLOAT
+    | STRING
+    | ID
+    ;
+
 
 ID : [a-zA-Z_]+ [a-zA-Z0-9_]* ;
 WS : [ \t\n\r]+ -> skip;

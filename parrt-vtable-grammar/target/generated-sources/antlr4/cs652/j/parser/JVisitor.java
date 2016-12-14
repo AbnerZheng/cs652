@@ -17,59 +17,23 @@ public interface JVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitFile(JParser.FileContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link JParser#expression}.
+	 * Visit a parse tree produced by {@link JParser#statement}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpression(JParser.ExpressionContext ctx);
+	T visitStatement(JParser.StatementContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link JParser#whileStatement}.
+	 * Visit a parse tree produced by {@link JParser#block}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitWhileStatement(JParser.WhileStatementContext ctx);
+	T visitBlock(JParser.BlockContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link JParser#ifStatement}.
+	 * Visit a parse tree produced by {@link JParser#blockStatement}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitIfStatement(JParser.IfStatementContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link JParser#blockExpression}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlockExpression(JParser.BlockExpressionContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link JParser#elseStatement}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitElseStatement(JParser.ElseStatementContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link JParser#newDefinition}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNewDefinition(JParser.NewDefinitionContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link JParser#variableDeclaration}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitVariableDeclaration(JParser.VariableDeclarationContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link JParser#assign}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitAssign(JParser.AssignContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link JParser#callParameters}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitCallParameters(JParser.CallParametersContext ctx);
+	T visitBlockStatement(JParser.BlockStatementContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link JParser#classDeclaration}.
 	 * @param ctx the parse tree
@@ -83,11 +47,11 @@ public interface JVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitClassBody(JParser.ClassBodyContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link JParser#fields}.
+	 * Visit a parse tree produced by {@link JParser#classBodyDeclaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFields(JParser.FieldsContext ctx);
+	T visitClassBodyDeclaration(JParser.ClassBodyDeclarationContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link JParser#methodDeclaration}.
 	 * @param ctx the parse tree
@@ -101,11 +65,11 @@ public interface JVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMethodBody(JParser.MethodBodyContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link JParser#type}.
+	 * Visit a parse tree produced by {@link JParser#fieldDeclaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitType(JParser.TypeContext ctx);
+	T visitFieldDeclaration(JParser.FieldDeclarationContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link JParser#formalParameters}.
 	 * @param ctx the parse tree
@@ -113,9 +77,57 @@ public interface JVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitFormalParameters(JParser.FormalParametersContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link JParser#parameters}.
+	 * Visit a parse tree produced by {@link JParser#formalParameterList}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitParameters(JParser.ParametersContext ctx);
+	T visitFormalParameterList(JParser.FormalParameterListContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#formalParameter}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFormalParameter(JParser.FormalParameterContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#typeType}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTypeType(JParser.TypeTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#primitiveType}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrimitiveType(JParser.PrimitiveTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#parExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitParExpression(JParser.ParExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#expressionList}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExpressionList(JParser.ExpressionListContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#statementExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStatementExpression(JParser.StatementExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExpression(JParser.ExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JParser#primary}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrimary(JParser.PrimaryContext ctx);
 }

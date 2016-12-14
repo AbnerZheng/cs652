@@ -18,95 +18,35 @@ public interface JListener extends ParseTreeListener {
 	 */
 	void exitFile(JParser.FileContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JParser#expression}.
+	 * Enter a parse tree produced by {@link JParser#statement}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpression(JParser.ExpressionContext ctx);
+	void enterStatement(JParser.StatementContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JParser#expression}.
+	 * Exit a parse tree produced by {@link JParser#statement}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpression(JParser.ExpressionContext ctx);
+	void exitStatement(JParser.StatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JParser#whileStatement}.
+	 * Enter a parse tree produced by {@link JParser#block}.
 	 * @param ctx the parse tree
 	 */
-	void enterWhileStatement(JParser.WhileStatementContext ctx);
+	void enterBlock(JParser.BlockContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JParser#whileStatement}.
+	 * Exit a parse tree produced by {@link JParser#block}.
 	 * @param ctx the parse tree
 	 */
-	void exitWhileStatement(JParser.WhileStatementContext ctx);
+	void exitBlock(JParser.BlockContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JParser#ifStatement}.
+	 * Enter a parse tree produced by {@link JParser#blockStatement}.
 	 * @param ctx the parse tree
 	 */
-	void enterIfStatement(JParser.IfStatementContext ctx);
+	void enterBlockStatement(JParser.BlockStatementContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JParser#ifStatement}.
+	 * Exit a parse tree produced by {@link JParser#blockStatement}.
 	 * @param ctx the parse tree
 	 */
-	void exitIfStatement(JParser.IfStatementContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JParser#blockExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlockExpression(JParser.BlockExpressionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JParser#blockExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlockExpression(JParser.BlockExpressionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JParser#elseStatement}.
-	 * @param ctx the parse tree
-	 */
-	void enterElseStatement(JParser.ElseStatementContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JParser#elseStatement}.
-	 * @param ctx the parse tree
-	 */
-	void exitElseStatement(JParser.ElseStatementContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JParser#newDefinition}.
-	 * @param ctx the parse tree
-	 */
-	void enterNewDefinition(JParser.NewDefinitionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JParser#newDefinition}.
-	 * @param ctx the parse tree
-	 */
-	void exitNewDefinition(JParser.NewDefinitionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JParser#variableDeclaration}.
-	 * @param ctx the parse tree
-	 */
-	void enterVariableDeclaration(JParser.VariableDeclarationContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JParser#variableDeclaration}.
-	 * @param ctx the parse tree
-	 */
-	void exitVariableDeclaration(JParser.VariableDeclarationContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JParser#assign}.
-	 * @param ctx the parse tree
-	 */
-	void enterAssign(JParser.AssignContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JParser#assign}.
-	 * @param ctx the parse tree
-	 */
-	void exitAssign(JParser.AssignContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JParser#callParameters}.
-	 * @param ctx the parse tree
-	 */
-	void enterCallParameters(JParser.CallParametersContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JParser#callParameters}.
-	 * @param ctx the parse tree
-	 */
-	void exitCallParameters(JParser.CallParametersContext ctx);
+	void exitBlockStatement(JParser.BlockStatementContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JParser#classDeclaration}.
 	 * @param ctx the parse tree
@@ -128,15 +68,15 @@ public interface JListener extends ParseTreeListener {
 	 */
 	void exitClassBody(JParser.ClassBodyContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JParser#fields}.
+	 * Enter a parse tree produced by {@link JParser#classBodyDeclaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterFields(JParser.FieldsContext ctx);
+	void enterClassBodyDeclaration(JParser.ClassBodyDeclarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JParser#fields}.
+	 * Exit a parse tree produced by {@link JParser#classBodyDeclaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitFields(JParser.FieldsContext ctx);
+	void exitClassBodyDeclaration(JParser.ClassBodyDeclarationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JParser#methodDeclaration}.
 	 * @param ctx the parse tree
@@ -158,15 +98,15 @@ public interface JListener extends ParseTreeListener {
 	 */
 	void exitMethodBody(JParser.MethodBodyContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JParser#type}.
+	 * Enter a parse tree produced by {@link JParser#fieldDeclaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterType(JParser.TypeContext ctx);
+	void enterFieldDeclaration(JParser.FieldDeclarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JParser#type}.
+	 * Exit a parse tree produced by {@link JParser#fieldDeclaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitType(JParser.TypeContext ctx);
+	void exitFieldDeclaration(JParser.FieldDeclarationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JParser#formalParameters}.
 	 * @param ctx the parse tree
@@ -178,13 +118,93 @@ public interface JListener extends ParseTreeListener {
 	 */
 	void exitFormalParameters(JParser.FormalParametersContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JParser#parameters}.
+	 * Enter a parse tree produced by {@link JParser#formalParameterList}.
 	 * @param ctx the parse tree
 	 */
-	void enterParameters(JParser.ParametersContext ctx);
+	void enterFormalParameterList(JParser.FormalParameterListContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JParser#parameters}.
+	 * Exit a parse tree produced by {@link JParser#formalParameterList}.
 	 * @param ctx the parse tree
 	 */
-	void exitParameters(JParser.ParametersContext ctx);
+	void exitFormalParameterList(JParser.FormalParameterListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#formalParameter}.
+	 * @param ctx the parse tree
+	 */
+	void enterFormalParameter(JParser.FormalParameterContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#formalParameter}.
+	 * @param ctx the parse tree
+	 */
+	void exitFormalParameter(JParser.FormalParameterContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#typeType}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeType(JParser.TypeTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#typeType}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeType(JParser.TypeTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#primitiveType}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrimitiveType(JParser.PrimitiveTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#primitiveType}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrimitiveType(JParser.PrimitiveTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#parExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterParExpression(JParser.ParExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#parExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitParExpression(JParser.ParExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#expressionList}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpressionList(JParser.ExpressionListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#expressionList}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpressionList(JParser.ExpressionListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#statementExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatementExpression(JParser.StatementExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#statementExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatementExpression(JParser.StatementExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpression(JParser.ExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpression(JParser.ExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JParser#primary}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrimary(JParser.PrimaryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JParser#primary}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrimary(JParser.PrimaryContext ctx);
 }
