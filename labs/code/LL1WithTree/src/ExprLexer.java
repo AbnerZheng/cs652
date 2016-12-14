@@ -23,10 +23,10 @@ public class ExprLexer extends Lexer {
 	public Token nextToken() throws IOException {
 		text.setLength(0); // reset text
 		int type = Token.INVALID_TYPE;
+        matchID();
 
-		// ...
 
-		if ( type==0 ) {
+		if ( type==Token.INVALID_TYPE ) {
 			System.err.println("illegal char: "+(char)c);
 			consume();
 			// try again (tail recursion is like a loop)
