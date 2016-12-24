@@ -2,6 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grammars/cs652/j/parser/J.g4" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/cs652/j/semantics/ComputeTypes.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/cs652/j/semantics/DefineScopesAndSymbols.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cs652/j/semantics/JClass.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/cs652/j/semantics/JMethod.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/cs652/j/semantics/JPrimitiveType.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/cs652/j/semantics/MainScope.java" charset="GB2312" />
     <file url="PROJECT" charset="GB2312" />
   </component>
 </project>

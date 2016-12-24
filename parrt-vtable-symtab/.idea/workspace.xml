@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeb2a928-1617-482c-a494-536427cfbcf8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$AssignContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$BlockExpressionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$CallParametersContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ElseStatementContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$FieldsContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$IfStatementContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelAssignContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelCallFuncContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelFieldCallContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelFloatContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelIDContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelIfExpressionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelIntContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelNewDefinitionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelReturnContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelStringContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelVariableDeclarationContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$LabelWhileExpressionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$NewDefinitionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ParametersContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$TypeNameContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$WhileStatementContext.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JBaseListener.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JBaseListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JBaseVisitor.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JBaseVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JLexer.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JLexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JListener.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ClassBodyContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ClassBodyContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ClassDeclarationContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ClassDeclarationContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ExpressionContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$ExpressionContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$FileContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$FileContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$FormalParametersContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$FormalParametersContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$MethodDeclarationContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$MethodDeclarationContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$StatementContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$StatementContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$VariableDeclarationContext.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser$VariableDeclarationContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/parser/JVisitor.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/parser/JVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/semantics/ComputeTypes.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/semantics/ComputeTypes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/semantics/DefineScopesAndSymbols.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/semantics/DefineScopesAndSymbols.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grammars/cs652/j/parser/J.g4" afterPath="$PROJECT_DIR$/grammars/cs652/j/parser/J.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/semantics/ComputeTypes.java" afterPath="$PROJECT_DIR$/src/cs652/j/semantics/ComputeTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/semantics/DefineScopesAndSymbols.java" afterPath="$PROJECT_DIR$/src/cs652/j/semantics/DefineScopesAndSymbols.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/J.tokens" afterPath="$PROJECT_DIR$/target/classes/J.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/JLexer.tokens" afterPath="$PROJECT_DIR$/target/classes/JLexer.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/J.tokens" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/J.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/JLexer.tokens" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/JLexer.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JBaseListener.java" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JBaseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JBaseVisitor.java" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JBaseVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JLexer.java" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JListener.java" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JParser.java" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JVisitor.java" afterPath="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vtable-symtab.iml" afterPath="$PROJECT_DIR$/vtable-symtab.iml" />
-    </list>
+    <list default="true" id="eeb2a928-1617-482c-a494-536427cfbcf8" name="Default" comment="" />
     <ignored path="vtable-symtab.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,22 +27,9 @@
           <file leaf-file-name="ComputeTypes.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/ComputeTypes.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#2228#2229#0" expanded="true" />
-                    <element signature="e#2268#2269#0" expanded="true" />
-                    <element signature="e#2509#2510#0" expanded="true" />
-                    <element signature="e#2550#2551#0" expanded="true" />
-                    <element signature="e#3241#3242#0" expanded="true" />
-                    <element signature="e#3286#3287#0" expanded="true" />
-                    <element signature="e#3368#3369#0" expanded="true" />
-                    <element signature="e#3407#3408#0" expanded="true" />
-                    <element signature="e#3792#3793#0" expanded="true" />
-                    <element signature="e#3832#3833#0" expanded="true" />
-                    <element signature="e#4694#4695#0" expanded="true" />
-                    <element signature="e#4734#4735#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="210">
+                  <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -104,7 +37,7 @@
           <file leaf-file-name="JBaseListener.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JBaseListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
+                <state relative-caret-position="5370">
                   <caret line="364" column="26" selection-start-line="364" selection-start-column="26" selection-end-line="364" selection-end-column="26" />
                   <folding />
                 </state>
@@ -114,12 +47,9 @@
           <file leaf-file-name="FrameworkMethod.class" pinned="false" current-in-tab="false">
             <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="210">
                   <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#841#1035#0" expanded="true" />
-                    <element signature="e#1034#1035#0" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -127,7 +57,7 @@
           <file leaf-file-name="InvokeMethod.class" pinned="false" current-in-tab="false">
             <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="240">
                   <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding />
                 </state>
@@ -137,7 +67,7 @@
           <file leaf-file-name="ParentRunner.class" pinned="false" current-in-tab="false">
             <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
+                <state relative-caret-position="1650">
                   <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
                   <folding />
                 </state>
@@ -157,12 +87,9 @@
           <file leaf-file-name="JParser.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
+                <state relative-caret-position="21150">
                   <caret line="1558" column="0" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#35909#35910#0" expanded="false" />
-                    <element signature="e#37424#37425#0" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -170,7 +97,7 @@
           <file leaf-file-name="ParseTreeWalker.class" pinned="false" current-in-tab="false">
             <entry file="jar:///usr/local/lib/antlr-4.5.3-complete.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
+                <state relative-caret-position="330">
                   <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                   <folding />
                 </state>
@@ -180,7 +107,7 @@
           <file leaf-file-name="deep_hier.types" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/samples/deep_hier.types">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
+                <state relative-caret-position="330">
                   <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
                   <folding />
                 </state>
@@ -190,7 +117,7 @@
           <file leaf-file-name="DefineScopesAndSymbols.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/DefineScopesAndSymbols.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
+                <state relative-caret-position="1245">
                   <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -236,7 +163,7 @@
           <file leaf-file-name="J.g4" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grammars/cs652/j/parser/J.g4">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
+                <state relative-caret-position="200">
                   <caret line="109" column="52" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
                   <folding>
                     <element signature="e#12#132#1" expanded="true" />
@@ -278,7 +205,7 @@
           <file leaf-file-name="deep_hier.j" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/samples/deep_hier.j">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
+                <state relative-caret-position="450">
                   <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
                   <folding />
                 </state>
@@ -327,7 +254,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -395,7 +322,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -415,31 +341,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vtable-symtab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parrt-vtable-symtab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -1276,7 +1185,8 @@
       <workItem from="1481721961177" duration="485000" />
       <workItem from="1481724734702" duration="1000" />
       <workItem from="1481725197921" duration="90000" />
-      <workItem from="1481731430760" duration="20189000" />
+      <workItem from="1481731430760" duration="20253000" />
+      <workItem from="1481858576278" duration="28000" />
     </task>
     <servers />
   </component>
@@ -1313,7 +1223,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60647000" />
+    <option name="totallyTimeSpent" value="60739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1322,7 +1232,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1330,10 +1239,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1345,6 +1254,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1378,6 +1288,24 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1511,7 +1439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1519,7 +1446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,7 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1572,7 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1588,7 +1512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1596,7 +1519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1604,7 +1526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1612,7 +1533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,7 +1540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-115">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1636,7 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1668,7 +1586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,7 +1601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1714,7 +1630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/DefineScopesAndSymbols.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="1245">
           <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1736,13 +1652,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/samples/deep_hier.types">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="330">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
@@ -1750,7 +1665,7 @@
     </entry>
     <entry file="jar:///usr/local/lib/antlr-4.5.3-complete.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="330">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
@@ -1758,7 +1673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/samples/deep_hier.j">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="450">
           <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding />
         </state>
@@ -1774,18 +1689,15 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="210">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#841#1035#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="240">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -1793,7 +1705,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="1650">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding />
         </state>
@@ -1801,7 +1713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JBaseListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="5370">
           <caret line="364" column="26" selection-start-line="364" selection-start-column="26" selection-end-line="364" selection-end-column="26" />
           <folding />
         </state>
@@ -1809,18 +1721,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/cs652/j/parser/JParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="21150">
           <caret line="1558" column="0" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
-          <folding>
-            <element signature="e#35909#35910#0" expanded="false" />
-            <element signature="e#37424#37425#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grammars/cs652/j/parser/J.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="200">
           <caret line="109" column="52" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
           <folding>
             <element signature="e#12#132#1" expanded="true" />
@@ -1830,22 +1739,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/ComputeTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2550#2551#0" expanded="true" />
-            <element signature="e#3241#3242#0" expanded="true" />
-            <element signature="e#3286#3287#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
-            <element signature="e#3792#3793#0" expanded="true" />
-            <element signature="e#3832#3833#0" expanded="true" />
-            <element signature="e#4694#4695#0" expanded="true" />
-            <element signature="e#4734#4735#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

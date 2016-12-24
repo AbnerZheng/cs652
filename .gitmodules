@@ -1,0 +1,3 @@
+[submodule "sample/adaptor"]
+	path = sample/adaptor
+	url = https://github.com/antlr/jetbrains.git

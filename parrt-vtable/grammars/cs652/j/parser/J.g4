@@ -2,7 +2,7 @@ grammar J;
 
 @header {
 import cs652.j.semantics.*; // You will need these for stuff in "returns" clauses
-import org.antlr.symbols.*;
+import org.antlr.symtab.*;
 }
 
 //file returns [GlobalScope scope] // this allows us to annotate trees with symtab info
@@ -15,97 +15,114 @@ import org.antlr.symbols.*;
 //
 // ...
 
-file
-    : (classDeclaration
-    | expression ';' | blockExpression | whileStatement | ifStatement )+
+file returns [GlobalScope scope]
+    : classDeclaration*  statementOfMain EOF
     | EOF
     ;
 
+statementOfMain returns [LocalScope scope]
+    : statement*
+    ;
 
-expression
-    : ID ('.' ID)* '(' callParameters? ')'   //调用函数
-    | ifStatement
-    | whileStatement
+statement
+    : block
     | variableDeclaration
-    | assign
-    | newDefinition
-    | 'return' expression
-    | ID ('.' expression)*
-    | ID
-    | STRING
-    | INT
-    | FLOAT
-    ;
-
-whileStatement
-    : 'while' '(' expression ')' (expression ';' | blockExpression)
-    ;
-
-ifStatement
-    : 'if' '(' expression ')' (expression ';' | blockExpression ) (elseStatement|blockExpression)?
-    ;
-
-blockExpression
-    : '{' (expression ';')* '}'
-    ;
-
-elseStatement
-    : 'else' (expression ';' | ifStatement | blockExpression)
-    ;
-
-newDefinition
-    : 'new' ID '(' callParameters? ')'
-    ;
-
-variableDeclaration
-    : type ID
-    ;
-
-assign
-    : ID ('.' ID)* '=' expression
+    | 'if' parExpression statement ('else' statement)?
+    | 'while' parExpression statement
+    | 'return' expression? ';'
+    | expression ';'
     ;
 
 
-
-callParameters
-    : expression (',' expression)*
+block returns [LocalScope scope]
+    : '{' blockStatement* '}'
     ;
 
+blockStatement
+    : variableDeclaration
+    | statement
+    ;
 
-classDeclaration
-    : 'class' ID ('extends' ID)? '{' classBody? '}'
+classDeclaration returns [JClass scope]
+    : 'class' ID ('extends' typeType)? classBody
     ;
 
 classBody
-    : (methodDeclaration
-        | fields
-    )+
+    : '{' classBodyDeclaration* '}'
+    ;
+classBodyDeclaration
+    : ';'
+    | block
+    | methodDeclaration
     ;
 
-fields
-    : variableDeclaration ';'
-    ;
-
-methodDeclaration
-    : type ID formalParameters methodBody
+methodDeclaration returns[JMethod scope]
+    : typeType ID formalParameters methodBody #labelMethod
+    | fieldsDeclaration #labelField
     ;
 
 methodBody
-    : '{' (expression ';')* '}'
+    : block
+    ;
+fieldsDeclaration
+    :  typeType ID ';'
     ;
 
-
-type
-    : ID
-    ;
-    
-formalParameters   
-    : '(' parameters? ')'
+variableDeclaration
+    : typeType ID ';'
     ;
 
-parameters
-    : type ID (',' type ID)*
+formalParameters
+    : '(' formalParameterList? ')'
     ;
+formalParameterList
+    : t+=formalParameter (',' t+=formalParameter)*
+    ;
+formalParameter
+    : typeType ID
+    ;
+
+typeType
+    : primitiveType
+    | ID
+    | 'void'
+    ;
+
+primitiveType
+    : 'int'
+    | 'float'
+    ;
+
+// EXPRESSIONS
+parExpression
+    : '(' expression ')'
+    ;
+expressionList
+    : e+=expression (',' e+=expression)*
+    ;
+statementExpression
+    : expression
+    ;
+expression returns [Type type]
+    : primary                               #labelOfPrimary
+    | expression '.' ID  #lableOfFieldVisit
+    | 'printf' '(' expressionList ')' #labelOfPrintf
+    | expression '(' expressionList? ')' #labelOfCall
+    | 'new' ID '(' ')'  #labelOfNew
+    | expression op=('*'|'/'|'%') expression #labelOfMult
+    | expression op=('+'|'-') expression #labelOfAdd
+    | <assoc=right> expression '=' expression #labelOfAssign
+    ;
+
+primary returns [Type type]
+    : parExpression #labelParExpression
+    | 'this'        #labelThis
+    | INT           #labelInt
+    | FLOAT         #labelFloat
+    | STRING        #labelString
+    | ID            #labelID
+    ;
+
 
 ID : [a-zA-Z_]+ [a-zA-Z0-9_]* ;
 WS : [ \t\n\r]+ -> skip;
